@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100em;
+  background: linear-gradient(#63ff05, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(black, #63ff05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 64px;
+}
+
+.header h1 {
+  color: #63ff05;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.header h1:hover {
+  border-bottom: 5px solid red;
+  border-radius: 15px;
+}
+
+h1 span {
+  color: red;
+}
+
+.header a,
+.header a .active {
+  color: #63ff05;
+  top: 0;
+  left: 40em;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.header a:hover,
+.header a .active {
+  color: #63ff05;
+  border-bottom: 5px solid red;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10%;
+    margin-top: 5em;
+}
+
+.section-1 {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    height: 300px;
+}
+
+.section-1 h1 {
+    color: #63ff05;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5em;
+}
+
+.section-1 p {
+    color: rebeccapurple;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10em;
+}
+
+.section-1 button {
+  color: #63ff05;
+  background: transparent;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 16px 45px;
+  margin: 25px; 
+  margin-left: 16.5em;
+  border: 1px solid #63ff05;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+.section-1 button:hover {
+  color: #008072;
+  background: #63ff05;
+}
+
+.section-2 img {
+  width: 40em;
+  border-radius: 15px;
+  margin-right: 15em;
+  box-shadow: 25px 25px 15px black;
+}
+
+.section-2 a {
+  width: 20%;
+  position: static;
+  color: #63ff05;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+  margin-left: 7em;
+  border-radius: 15px;
+}
+
+.section-2 a:hover {
+  border-radius: 15px;
+  border-bottom: 3px solid #63ff05;
+}
+
+/* .imghover {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  width: 70px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  border-radius: 25px;
+  transition: .3s;
+}
+
+.imghover a {
+  position: relative;
+  color: #63ff05;
+  align-items: center;
+  background: linear-gradient(#63ff05, black);
+  text-decoration: none;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  top: 550px;
+  border: 2px solid aqua;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 250px;
+}
+
+.imghover a:hover {
+  position: relative;
+  align-items: center;
+  color: #51fa48;
+  top: 550px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 250px;
+}
+
+.imghover:hover {
+  position: absolute;
+  right: 100px;
+  width: 700px;
+  height: 100%;
+  align-items: center;
+  background: url(image/man.jpg) no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+@keyframes showLeft {
+  100% {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: left;
+    width: 100%;
+}
+} */
+
+.social-icon {
+  margin-left: 65em;
+}
+
+.social-icon a {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  box-shadow: 0 4px 4px black;
+  margin: 0.8px;
+  z-index: -1;
+  text-align: center;
+  line-height: 45px;
+  transition: .3s;
+}
+
+.social-icon a:hover {
+  background: aqua;
+  transform: rotate(135deg);
+  box-shadow: 0 0 5px aqua, 0 0 10px aqua;
+}
+
+.social-icon a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(#63ff05, #008072);
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.social-icon a i {
+  font-size: 18px;
+  color: black;
+}
+
+.social-icon a:hover i {
+  transform: rotate(225deg);
+  color: aqua;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
